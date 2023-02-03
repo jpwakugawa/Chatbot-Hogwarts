@@ -1,7 +1,7 @@
-FROM node:14
+FROM node:16-alpine
 
-WORKDIR /var/www
-COPY ./web /var/www
+WORKDIR /app
+COPY ./web /app
 
 RUN npm install
 ENTRYPOINT ["node", "server.js"]

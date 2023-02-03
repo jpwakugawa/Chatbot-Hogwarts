@@ -1,4 +1,4 @@
-FROM rasa/rasa:3.1.0-full
+FROM rasa/rasa:3.4.2-full
 
 USER root
 COPY ./bot /app
