@@ -1,5 +1,5 @@
 # This file contains the different endpoints your bot can use.
 
 action_endpoint:
-  url: "http://localhost:5055/webhook"
-#  url: "https://yournamespace.cloud.okteto.net//webhook"
+  url: "http://actions:5055/webhook"     # Deploy (Docker Compose)
+  # url: "http://localhost:5055/webhook" # Deploy (Local)

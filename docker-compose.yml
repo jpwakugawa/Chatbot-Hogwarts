@@ -4,7 +4,6 @@ services:
   # ================================= Bot =====================================
   # Rasa bot, used to run console for example.
   bot:
-    public: true
     build:
       context: .
       dockerfile: ./docker/bot.Dockerfile
