@@ -14,7 +14,7 @@
 
 ---
 
-## Deploy Docker Compose
+## Deploy (Docker Compose)
 - Suba e derrube os containers:
     ```bash
     docker compose up -d
@@ -28,7 +28,7 @@
 
 ---
 
-## Deploy Local 
+## Deploy (Local) 
 ### Python3 environment
 ```bash
 python3 -m venv venv
@@ -44,6 +44,8 @@ source ./venv/bin/activate
     ```
 
 ### Rasa SDK
+- Siga o passo-passo para conectar no MongoDB Atlas: [Connect to Your Cluster](https://www.mongodb.com/docs/atlas/tutorial/connect-to-your-cluster/)
+
 - Siga `bot` > `actions`:<br>
 Adicione um arquivo **secrets.py** com as informações do seu cluster.
     ```python3
