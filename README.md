@@ -5,11 +5,6 @@
 <img src = https://img.shields.io/badge/Python-Linguagem%20-brightgreen>
 </p>
 
-## Informações
-- Autor : João Paulo Wakugawa 
-- API : <a href="http://hp-api.herokuapp.com/">Harry-Potter</a>
-- Link do Okteto : <a href="https://web-jpwakugawa.cloud.okteto.net/">Chat de Hogwarts</a>
-
 ---
 
 ## Funcionalidades
@@ -19,7 +14,28 @@
 
 ---
 
-## Projeto Local 
+## Deploy Docker Compose
+- Suba e derrube os containers:
+    ```bash
+    docker compose up -d
+    docker compose down
+    ```
+
+- Analise os logs:
+    ```bash
+    docker compose logs -f
+    ```
+
+---
+
+## Deploy Local 
+### Python3 environment
+```bash
+python3 -m venv venv
+pip install -r requirements.txt
+source ./venv/bin/activate
+```
+
 ### Rasa
 - Siga `bot`:
     ```bash
@@ -52,20 +68,6 @@ Adicione um arquivo **secrets.py** com as informações do seu cluster.
 
 ---
 
-## Okteto
-- Comando para deploy:
-    ```bash
-    okteto deploy --build
-    ```
-
-- Siga `web` > `public` > `index.html`:<br>
-Mude **data-websocket-url** para o endpoint gerado pelo bot no Okteto.
-
-- Sige `bot` > `endpoints.yml`:<br>
-Mude **url** para o endpoint gerado pelo actions no Okteto.
-
----
-
 ## Tecnologias e depêndencias :books:
 - <a href="https://rasa.com/docs/rasa/installation/">Rasa</a>
 - <a href="https://docs.python.org/3/">Python</a>
@@ -73,3 +75,4 @@ Mude **url** para o endpoint gerado pelo actions no Okteto.
 - <a href="https://pymongo.readthedocs.io/en/stable/index.html">Pymongo</a>
 - <a href="https://docs.docker.com/">Docker</a>
 - <a href="https://okteto.com/docs/getting-started/index.html">Okteto</a>
+- <a href="http://hp-api.herokuapp.com/">API Harry Potter</a>
