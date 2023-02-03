@@ -15,6 +15,17 @@
 ---
 
 ## Deploy (Docker Compose)
+- Siga o passo-passo para conectar no MongoDB Atlas: [Connect to Your Cluster](https://www.mongodb.com/docs/atlas/tutorial/connect-to-your-cluster/)
+
+- Siga `bot` > `actions`:<br>
+Adicione um arquivo **secrets.py** com as informações do seu cluster.
+    ```python3
+    secrets = {
+        "CLUSTER": "your_cluster",
+        "DB_NAME": "your_database",
+        "COL_NAME": "your_collection"
+    }
+    
 - Suba e derrube os containers:
     ```bash
     docker compose up -d
